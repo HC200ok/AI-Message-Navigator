@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -136,9 +136,13 @@
             margin: 20px 0;
         }
 
-        .pricing-card ul li,
+        .pricing-card ul li {
+            margin: 15px 0;
+            color: #555;
+        }
+
         .features-card ul li {
-            margin: 10px 0;
+            margin: 30px 0;
             color: #555;
         }
 
@@ -203,6 +207,9 @@
             display: block;
             margin: 20px auto;
         }
+        .platforms {
+            margin: 30px 0px;
+        }
     </style>
 </head>
 
@@ -210,13 +217,13 @@
     <header>
         <div class="container">
             <img src="./icon.png" class="icon">
-            <h1 class="ja">AI Message Navigator</h1>
-            <h1 class="en hidden">AI Message Navigator</h1>
-            <p class="ja">AIチャットプラットフォーム用のシンプルでパワフルなブラウザ拡張</p>
-            <p class="en hidden">A Simple and Powerful browser extension for AI Chat platforms</p>
+            <h1 class="ja hidden">AI Message Navigator</h1>
+            <h1 class="en">AI Message Navigator</h1>
+            <p class="ja hidden">AIチャットプラットフォーム用のシンプルでパワフルなブラウザ拡張</p>
+            <p class="en">A Simple and Powerful browser extension for AI Chat platforms</p>
             <div class="lang-switch">
-                <button class="lang-btn active" data-lang="ja">日本語</button>
-                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="ja">日本語</button>
             </div>
         </div>
     </header>
@@ -225,15 +232,15 @@
         <div class="container">
             <div class="features-card">
                 <h2 class="">Basic Features</h2>
-                <ul class="ja">
+                <ul class="ja hidden">
                     <li>過去のメッセージに素早くスムーズにアクセスする。</li>
                 </ul>
-                <ul class="en hidden">
+                <ul class="en">
                     <li>🎯 Helps you quickly and smoothly navigate to historical messages.</li>
                 </ul>
-                <img class="demo" src="./ai-icons/demo.gif" alt="">
+                <iframe width="740" height="416" src="https://www.youtube.com/embed/BkUM-c6AKpY?si=byS_Gp8PkXjufBXH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <div class="platforms">
-                    Supports
+                    Supports:
                     <img class="platform-icon"
                         src="./ai-icons/chatgpt.png" alt=""
                         style="width: 32px; height: 32px;">
@@ -250,12 +257,17 @@
                         src="./ai-icons/grok.jpg" alt=""
                         style="width: 32px; height: 32px;">
                     <span>Grok</span>
-                    <!-- <span class="platform">
-                            <img class="platform-icon"
-                                src="https://assets.monica.im/home-web/_next/static/media/deepseek.2f306adf.png"
-                                alt="" style="width: 32px; height: 32px;">
-                            <span>DeepSeek V3 &amp; R1</span>
-                        </span> -->
+                        <img class="platform-icon"
+                        src="./ai-icons/deepseek.png" alt=""
+                        style="width: 32px; height: 32px;">
+                    <span>Deepseek</span>
+                </div>
+
+                <div class="support">
+                    <img src="./support.png" style="display:block; width: 70%; margin: 30px auto;" alt="">
+                    <span>
+                        ⚠️ AI Message Navigator supports only personal plans for the AI platforms listed. Enterprise plans are not supported.
+                    </span>
                 </div>
             </div>
         </div>
@@ -264,10 +276,10 @@
     <section id="pricing" class="section">
         <div class="container">
             <div class="pricing-card">
-                <h2 class="ja">Premium</h2>
-                <h2 class="en hidden">Premium</h2>
+                <h2 class="ja hidden">Premium</h2>
+                <h2 class="en">Premium</h2>
                 <p class="price">$2</p>
-                <ul class="ja">
+                <ul class="ja hidden">
                     <li><strong>特典:</strong></li>
                     <li>🌙 ダークモード</li>
                     <li>🖱️ ドラッグ＆リサイズ可能なナビゲーターパネル</li>
@@ -275,16 +287,16 @@
                     <li>⬇️ メッセージの展開・折りたたみ</li>
                     <li>🌟 今後利用可能になる新機能にご期待ください。</li>
                 </ul>
-                <ul class="en hidden">
-                    <li><strong>Unlock Features:</strong></li>
+                <ul class="en">
+                    <li><strong>Unlock advanced Features:</strong></li>
                     <li>🌙 Dark mode</li>
                     <li>🖱️ Draggable & resizable navigator panel</li>
                     <li>📋 Clipboard support</li>
                     <li>⬇️ Expandable/collapsible messages</li>
                     <li>🌟 Upcoming exciting new features</li>
                 </ul>
-                <a href="#" class="btn ja" disable>今すぐ購入</a>
-                <a href="#" class="btn en hidden">Unlock Now</a>
+                <a href="#" class="btn ja hidden" disable>今すぐ購入</a>
+                <a href="#" class="btn en">Unlock Now</a>
             </div>
         </div>
     </section>
@@ -292,37 +304,37 @@
     <section id="legal" class="section">
         <div class="container">
             <div class="legal-section">
-                <h3 class="ja">特定商取引法に基づく表記</h3>
-                <h3 class="en hidden">Legal Information</h3>
-                <p class="ja"><span class="label">販売業社の名称</span>：HAN　CHAO</p>
-                <p class="en hidden"><span class="label">Seller</span>: HAN　CHAO</p>
-                <p class="ja"><span class="label">所在地</span>：〒211-0053 神奈川県川崎市中原区上小田中２丁目２２−４ リバティーフラット 201</p>
-                <p class="en hidden"><span class="label">Address</span>: 2-22-4, Kamikodanaka, Nakahara Ward, Kawasaki City, Kanagawa Prefecture, 211-0053, Liberty Flat 201</p>
-                <p class="ja"><span class="label">電話番号</span>：080-7992-5209（受付時間：平日18:00-20:00）</p>
-                <p class="en hidden"><span class="label">Phone</span>: 080-7992-5209 (Available: Weekdays 18:00-20:00)</p>
-                <p class="ja"><span class="label">メールアドレス</span>：hanchao0408@gmail.com</p>
-                <p class="en hidden"><span class="label">Email</span>: hanchao0408@gmail.com</p>
-                <p class="ja"><span class="label">運営統括責任者</span>：HAN　CHAO</p>
-                <p class="en hidden"><span class="label">Person in Charge of Operations</span>: HAN　CHAO</p>
+                <h3 class="ja hidden">特定商取引法に基づく表記</h3>
+                <h3 class="en">Legal Information</h3>
+                <p class="ja hidden"><span class="label">販売業社の名称</span>：HAN　CHAO</p>
+                <p class="en"><span class="label">Seller</span>: HAN　CHAO</p>
+                <p class="ja hidden"><span class="label">所在地</span>：〒211-0053 神奈川県川崎市中原区上小田中２丁目２２−４ リバティーフラット 201</p>
+                <p class="en"><span class="label">Address</span>: 2-22-4, Kamikodanaka, Nakahara Ward, Kawasaki City, Kanagawa Prefecture, 211-0053, Liberty Flat 201</p>
+                <p class="ja hidden"><span class="label">電話番号</span>：080-7992-5209（受付時間：平日18:00-20:00）</p>
+                <p class="en"><span class="label">Phone</span>: 080-7992-5209 (Available: Weekdays 18:00-20:00)</p>
+                <p class="ja hidden"><span class="label">メールアドレス</span>：hanchao0408@gmail.com</p>
+                <p class="en"><span class="label">Email</span>: hanchao0408@gmail.com</p>
+                <p class="ja hidden"><span class="label">運営統括責任者</span>：HAN　CHAO</p>
+                <p class="en"><span class="label">Person in Charge of Operations</span>: HAN　CHAO</p>
 
-                <p class="ja"><span class="label">追加手数料等の追加料金</span>：なし</p>
-                <p class="en hidden"><span class="label">Additional fees or charges</span>: None</p>
+                <p class="ja hidden"><span class="label">追加手数料等の追加料金</span>：なし</p>
+                <p class="en"><span class="label">Additional fees or charges</span>: None</p>
 
 
-                <p class="ja"><span class="label">交換および返品（返金ポリシー）</span>：デジタル商品の性質上、返品・交換は受け付けておりません。ただし、法令に基づく場合を除きます。</p>
-                <p class="en hidden"><span class="label">Exchange and Return (Refund Policy)</span>:Due to the nature of digital products, we do not accept returns or exchanges. However, exceptions may apply as required by law.</p>
+                <p class="ja hidden"><span class="label">交換および返品（返金ポリシー）</span>：デジタル商品の性質上、返品・交換は受け付けておりません。ただし、法令に基づく場合を除きます。</p>
+                <p class="en"><span class="label">Exchange and Return (Refund Policy)</span>:Due to the nature of digital products, we do not accept returns or exchanges. However, exceptions may apply as required by law.</p>
 
-                <p class="ja"><span class="label">引渡時期</span>：ご購入後、直ちに利用可能。</p>
-                <p class="en hidden"><span class="label">Delivery period</span>: Available for immediate use after purchase.</p>
+                <p class="ja hidden"><span class="label">引渡時期</span>：ご購入後、直ちに利用可能。</p>
+                <p class="en"><span class="label">Delivery period</span>: Available for immediate use after purchase.</p>
 
-                <p class="ja"><span class="label">受け付け可能な決済手段</span>：クレジットカード。</p>
-                <p class="en hidden"><span class="label">Acceptable payment methods</span>: Credit card.</p>
+                <p class="ja hidden"><span class="label">受け付け可能な決済手段</span>：クレジットカード。</p>
+                <p class="en"><span class="label">Acceptable payment methods</span>: Credit card.</p>
 
-                <p class="ja"><span class="label">決済期間</span>：ただちに処理されます。</p>
-                <p class="en hidden"><span class="label">Payment period</span>: Processed immediately.</p>
+                <p class="ja hidden"><span class="label">決済期間</span>：ただちに処理されます。</p>
+                <p class="en"><span class="label">Payment period</span>: Processed immediately.</p>
 
-                <p class="ja"><span class="label">販売価格</span>：$1（USD）（為替レートにより日本円で決済）</p>
-                <p class="en hidden"><span class="label">Price</span>: $1 (USD) (Settled in JPY based on exchange rate)
+                <p class="ja hidden"><span class="label">販売価格</span>：$1（USD）（為替レートにより日本円で決済）</p>
+                <p class="en"><span class="label">Price</span>: $1 (USD) (Settled in JPY based on exchange rate)
                 </p>
 
             </div>
@@ -330,8 +342,8 @@
     </section>
 
     <footer>
-        <p class="ja">© 2025 AI Message Navigator. All rights reserved.</p>
-        <p class="en hidden">© 2025 AI Message Navigator. All rights reserved.</p>
+        <p class="ja hidden">© 2025 AI Message Navigator. All rights reserved.</p>
+        <p class="en">© 2025 AI Message Navigator. All rights reserved.</p>
     </footer>
 
     <script>
